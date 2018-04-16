@@ -52,7 +52,7 @@ func Welcome(c *gin.Context) {
 // @Summary Post a message
 // @Description Post a message and return it.
 // @ID postMessage
-// @Accept text/plain
+// @Accept application/x-www-form-urlencoded
 // @Produce  json
 // @Param   message     body    string     true        "message=My Message"
 // @Success 200 {object} api.MessageResponse "ok"
