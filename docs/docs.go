@@ -21,6 +21,9 @@ var doc = `{
     },
     "host": "svc-3scale-demo.3scale-demo:8080",
     "basePath": "/",
+    "schemes": [
+        "http"
+    ],   
     "paths": {
         "/ping": {
             "get": {
@@ -30,6 +33,16 @@ var doc = `{
                 ],
                 "summary": "Get a Pong back",
                 "operationId": "ping",
+                "parameters": [
+                    {
+                        "name": "user_key",
+                        "in": "query",
+                        "description": "Your API access key",
+                        "required": true,
+                        "x-data-threescale-name": "user_keys",
+                        "type": "string"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "ok",
@@ -45,7 +58,7 @@ var doc = `{
             "post": {
                 "description": "Post a message and return it.",
                 "consumes": [
-                    "text/plain"
+                    "application/x-www-form-urlencoded"
                 ],
                 "produces": [
                     "application/json"
