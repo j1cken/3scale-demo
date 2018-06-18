@@ -19,7 +19,7 @@ var doc = `{
         },
         "version": "1.0"
     },
-    "host": "svc-3scale-demo.3scale-demo:8080",
+    "host": "svc-3scale-demo.3scale-demo.svc.cluster.local:8080",
     "basePath": "/",
     "schemes": [
         "http"
