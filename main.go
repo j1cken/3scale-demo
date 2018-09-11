@@ -17,7 +17,7 @@ import (
 // @license.name Apache 2.0
 // @license.url http://www.apache.org/licenses/LICENSE-2.0.html
 
-// @host svc-3scale-demo.3scale-demo:8080
+// @host application-3scale-amp-demo.apps.46.4.143.210.xip.io:80
 // @BasePath /
 func main() {
 	r := gin.Default()
